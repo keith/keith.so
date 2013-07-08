@@ -1,0 +1,3 @@
+[submodule "touchicons"]
+	path = touchicons
+	url = git@bitbucket.org:SmileyKeith/touchicons.git
