@@ -5,6 +5,18 @@
   src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
+$green: #2ECC71; 
+$purple: #A086D3;
+$blue: #00ACEE;
+$red: #E74C3C;
+
+@mixin link($color) {
+  color: $color;
+  &:hover {
+    border-color: $color;
+  }
+}
+
 body {
   color: #171515;
   font-family: 'Open Sans', sans-serif;
@@ -39,35 +51,22 @@ a {
   -moz-transition: border-color 0.15s linear;    /* FF3.7+ */
   -o-transition: border-color 0.15s linear;      /* Opera 10.5 */
   -webkit-transition: border-color 0.15s linear; /* Saf3.2+, Chrome */
-}
 
-a:active {
-  position: relative;
-  top: 1px;
+  &:active {
+    position: relative;
+    top: 1px;
+  }
 }
 
 #apps {
-  color: #2ECC71;
-  // color: #E74C3C;
-}
-
-#apps:hover {
-  border-color: #2ECC71;
+  @include link($green);
 }
 
 #github {
-  color: #A086D3;
-}
-
-#github:hover {
-  border-color: #A086D3;
+  @include link($purple);
 }
 
 #twitter {
-  color: #00ACEE;
-}
-
-#twitter:hover {
-  border-color: #00ACEE;
+  @include link($blue);
 }
 
