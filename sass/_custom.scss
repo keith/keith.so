@@ -1,0 +1,66 @@
+body {
+  color: #171515;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  width: 60%;
+}
+
+#container {
+  display: table;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+#cell {
+  display: table-cell;
+  padding: 10%;
+  vertical-align: middle;
+}
+
+#content {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: border-color 0.15s linear;
+  -moz-transition: border-color 0.15s linear;    /* FF3.7+ */
+  -o-transition: border-color 0.15s linear;      /* Opera 10.5 */
+  -webkit-transition: border-color 0.15s linear; /* Saf3.2+, Chrome */
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+#apps {
+  color: #2ECC71;
+  // color: #E74C3C;
+}
+
+#apps:hover {
+  border-color: #2ECC71;
+}
+
+#github {
+  color: #A086D3;
+}
+
+#github:hover {
+  border-color: #A086D3;
+}
+
+#twitter {
+  color: #00ACEE;
+}
+
+#twitter:hover {
+  border-color: #00ACEE;
+}
+
