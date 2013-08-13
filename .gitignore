@@ -1,2 +1,6 @@
 bower_components
+node_modules
+sass/_normalize.scss
+build
+_site
 
