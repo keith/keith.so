@@ -36,8 +36,8 @@ module.exports = function(grunt) {
             dest: 'sass/_normalize.scss'
           },
           {
-            src: 'index.html',
-            dest: 'build/index.html'
+            src: '*.html',
+            dest: 'build/'
           }
         ]
       }
