@@ -34,16 +34,32 @@ module.exports = function(grunt) {
           {
             src: 'bower_components/normalize-css/normalize.css',
             dest: 'sass/_normalize.scss'
+          },
+          {
+            src: 'index.html',
+            dest: 'build/index.html'
           }
         ]
+      }
+    },
+
+    sass: {
+      main: {
+        options: {
+          style: "compressed"
+        },
+        files: {
+          'build/css/main.css': 'sass/main.scss'
+        }
       }
     }
   });
 
+  grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
-  grunt.loadNpmTasks('grunt-bower-task');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('default', ['bower', 'uglify', 'copy']);
+  grunt.registerTask('default', ['bower', 'copy', 'uglify', 'sass']);
 };
 
