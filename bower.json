@@ -1,0 +1,17 @@
+{
+  "name": "keith.so",
+  "version": "2.0.0",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "FitText.js": "git://github.com/davatron5000/FitText.js.git",
+    "normalize-css": "~2.1.2",
+    "modernizr": "~2.6.2"
+  }
+}
