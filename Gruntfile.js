@@ -38,6 +38,14 @@ module.exports = function(grunt) {
           {
             src: '*.html',
             dest: 'build/'
+          },
+          {
+            src: 'robots.txt',
+            dest: 'build/',
+          },
+          {
+            src: 'favicon.*',
+            dest: 'build/'
           }
         ]
       }
@@ -57,6 +65,10 @@ module.exports = function(grunt) {
     watch: {
       files: ['*.html', 'sass/*'],
       tasks: ['default']
+    },
+
+    rsync: {
+      
     }
   });
 
@@ -65,6 +77,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks("grunt-rsync")
 
   grunt.registerTask('default', ['bower', 'copy', 'uglify', 'sass']);
 };
