@@ -70,19 +70,11 @@ module.exports = function(grunt) {
     rsync: {
       dist: {
         options: {
-          args: ['-avze'],
-          src: "index.html",
-          dest: "/home/ksmiley/foobar",
+          args: ['-avz', '--delete'],
+          src : 'build/',
+          dest: '/srv/www/keith.so/public_html',
           host: 'ksmiley@66.175.208.254',
-        port: '22',
-        },
-        args: ['-avze', '--verbose'],
-        src: "index.html",
-        dest: "/srv/www/keith.so/foobar",
-        port: '22',
-        recursive: true,
-        host: 'ksmiley@66.175.208.254',
-        syncDestIgnoreExcl: true
+        }
       }
     }
   });
@@ -92,7 +84,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks("grunt-rsync")
+  grunt.loadNpmTasks("grunt-rsync");
 
   grunt.registerTask('default', ['bower', 'copy', 'uglify', 'sass']);
 };
