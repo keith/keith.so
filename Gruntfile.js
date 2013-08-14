@@ -40,12 +40,20 @@ module.exports = function(grunt) {
             dest: 'build/'
           },
           {
+            src: '*.php',
+            dest: 'build/'
+          },
+          {
             src: 'robots.txt',
             dest: 'build/',
           },
           {
             src: 'favicon.*',
             dest: 'build/'
+          },
+          {
+            src: 'a.htaccess',
+            dest: 'build/.htaccess'
           }
         ]
       }
@@ -87,5 +95,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-rsync");
 
   grunt.registerTask('default', ['bower', 'copy', 'uglify', 'sass']);
+  grunt.registerTask('deploy', ['default', 'rsync']);
 };
 
