@@ -68,7 +68,22 @@ module.exports = function(grunt) {
     },
 
     rsync: {
-      
+      dist: {
+        options: {
+          args: ['-avze'],
+          src: "index.html",
+          dest: "/home/ksmiley/foobar",
+          host: 'ksmiley@66.175.208.254',
+        port: '22',
+        },
+        args: ['-avze', '--verbose'],
+        src: "index.html",
+        dest: "/srv/www/keith.so/foobar",
+        port: '22',
+        recursive: true,
+        host: 'ksmiley@66.175.208.254',
+        syncDestIgnoreExcl: true
+      }
     }
   });
 
