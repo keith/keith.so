@@ -5,10 +5,11 @@
   src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
-$green: #2ECC71; 
+$green: #2ECC71;
 $purple: #A086D3;
 $blue: #00ACEE;
 $red: #E74C3C;
+$dark-blue: #3B5998;
 
 @mixin link($color) {
   color: $color;
@@ -68,5 +69,13 @@ a {
 
 #twitter {
   @include link($blue);
+}
+
+#blog {
+  @include link($red);
+}
+
+#resume {
+  @include link($dark-blue);
 }
 
