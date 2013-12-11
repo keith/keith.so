@@ -39,10 +39,10 @@ module.exports = function(grunt) {
             src: '*.html',
             dest: 'build/'
           },
-          {
-            src: '*.php',
-            dest: 'build/'
-          },
+          // {
+          //   src: '*.php',
+          //   dest: 'build/'
+          // },
           {
             src: 'robots.txt',
             dest: 'build/',
@@ -80,7 +80,7 @@ module.exports = function(grunt) {
         options: {
           args: ['-avz', '--delete'],
           src : 'build/',
-          dest: '/srv/www/keith.so/public_html',
+          dest: '/sites/keith.so/public',
           host: 'ksmiley@66.175.208.254',
         }
       }
