@@ -1,2 +1,2 @@
-<?php header('Location: http://keith.so'); ?>
+<?php header('Location: https://keith.so'); ?>
 
