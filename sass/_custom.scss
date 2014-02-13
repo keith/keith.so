@@ -10,6 +10,7 @@ $purple: #A086D3;
 $blue: #00ACEE;
 $red: #E74C3C;
 $dark-blue: #3B5998;
+$gold: #FFC937;
 
 @mixin link($color) {
   color: $color;
@@ -79,3 +80,6 @@ a {
   @include link($dark-blue);
 }
 
+#email {
+  @include link($gold);
+}
