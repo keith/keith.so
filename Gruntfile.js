@@ -44,6 +44,10 @@ module.exports = function(grunt) {
           //   dest: 'build/'
           // },
           {
+            src: '*.asc',
+            dest: 'build/'
+          },
+          {
             src: 'robots.txt',
             dest: 'build/',
           },
@@ -97,4 +101,3 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['bower', 'copy', 'uglify', 'sass']);
   grunt.registerTask('deploy', ['default', 'rsync']);
 };
-

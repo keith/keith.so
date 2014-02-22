@@ -11,6 +11,7 @@ $blue: #00ACEE;
 $red: #E74C3C;
 $dark-blue: #3B5998;
 $gold: #FFC937;
+$grey: #888888;
 
 @mixin link($color) {
   color: $color;
@@ -60,6 +61,11 @@ a {
   }
 }
 
+sup {
+  vertical-align: middle;
+  font-size: 50%;
+}
+
 #apps {
   @include link($green);
 }
@@ -82,4 +88,8 @@ a {
 
 #email {
   @include link($gold);
+}
+
+#pgp {
+  color: $grey;
 }
