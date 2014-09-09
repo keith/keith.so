@@ -79,18 +79,25 @@ module.exports = function(grunt) {
       tasks: ['default']
     },
 
+    gitDir: "gh-pages",
     shell: {
       clone: {
-        command: 'git clone --branch gh-pages https://github.com/Keithbsmiley/marooned.git gh-pages'
+        command: 'git clone --branch gh-pages https://github.com/Keithbsmiley/keith.so.git <%= gitDir %>'
+      },
+      empty: {
+        command: 'rm -rf <%= gitDir %>/*'
       },
       move: {
-        command: 'touch foo.txt'
+        command: 'mv build/* <%= gitDir %>'
       },
       commit: {
-        command: 'touch push.txt'
+        command: 'cd <%= gitDir %>; git add --all; git commit -m "`date`"; true'
       },
       push: {
-        command: 'touch asdf.txt'
+        command: 'cd <%= gitDir %>; git push'
+      },
+      clean: {
+        command: 'rm -rf <%= gitDir %>'
       }
     }
   });
