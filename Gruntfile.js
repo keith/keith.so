@@ -66,7 +66,7 @@ module.exports = function(grunt) {
     sass: {
       main: {
         options: {
-          style: "compressed"
+          style: 'compressed'
         },
         files: {
           'build/css/main.css': 'sass/main.scss'
@@ -79,14 +79,18 @@ module.exports = function(grunt) {
       tasks: ['default']
     },
 
-    rsync: {
-      dist: {
-        options: {
-          args: ['-avz', '--delete'],
-          src : 'build/',
-          dest: '/sites/keith.so/public',
-          host: 'ksmiley@66.175.208.254',
-        }
+    shell: {
+      clone: {
+        command: 'git clone --branch gh-pages https://github.com/Keithbsmiley/marooned.git gh-pages'
+      },
+      move: {
+        command: 'touch foo.txt'
+      },
+      commit: {
+        command: 'touch push.txt'
+      },
+      push: {
+        command: 'touch asdf.txt'
       }
     }
   });
@@ -96,8 +100,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks("grunt-rsync");
+  grunt.loadNpmTasks('grunt-shell');
 
   grunt.registerTask('default', ['bower', 'copy', 'uglify', 'sass']);
-  grunt.registerTask('deploy', ['default', 'rsync']);
+  grunt.registerTask('deploy', ['default', 'shell']);
 };
