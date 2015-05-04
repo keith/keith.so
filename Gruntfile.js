@@ -39,6 +39,10 @@ module.exports = function(grunt) {
             src: '*.html',
             dest: 'build/'
           },
+          {
+            src: 'CNAME',
+            dest: 'build/'
+          },
           // {
           //   src: '*.php',
           //   dest: 'build/'
