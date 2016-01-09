@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/smileykeith
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://keith.so
+  * I am smileykeith (https://keybase.io/smileykeith) on keybase.
+  * I have a public key with fingerprint AC20 B263 327E 9C9A A61A  55A1 33BA 60D4 4C71 67F8
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101bc14a86418abb470da965f4129ef72df5d167ff49bc74ff0464e29b21b48d8130a",
+            "fingerprint": "ac20b263327e9c9aa61a55a133ba60d44c7167f8",
+            "host": "keybase.io",
+            "key_id": "33ba60d44c7167f8",
+            "kid": "0101bc14a86418abb470da965f4129ef72df5d167ff49bc74ff0464e29b21b48d8130a",
+            "uid": "024d9f476cbba6bf1cfcea27145ac700",
+            "username": "smileykeith"
+        },
+        "service": {
+            "hostname": "keith.so",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1452324056,
+    "expire_in": 157680000,
+    "prev": "18e83d214d06a755f0215a153d989189b9601b7dcc1eae8b44017ea97c15dc0f",
+    "seqno": 12,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owGtUmtQVVUYvdzA4TEUo9FjIM2TUgjh2eeeJwz8UBiTcVQs0OHpPufsczkB93kg
+4MZkIJCD8ii7jUIKiSLkoFxwxuQ2QjBkmgbDFW4FUVSOJUGDOHNLepxD9q+f7T97
+9vettb61vtmNoY/o9H6Gy/s9O6xGn9/1n3hdRmPftAPjzWIZFu/ACtDKhQpFZFfy
+CmQRi8dwgANeACRkaRKwkOdJBhchR1MSCQgOSQwhSpQIaEaSSI4XGFKScJImEcHx
+BOBJVmSBAYdYLCbJJiOyWWyySVFloUDgPEEbDASDOIGDkAaQoiAwGHhI4yJJCoym
+yarEfLNdY6jmeGhHcbJZramPvBV7/4H/n30X/yNHkCInkQwt8OpAXgKCJCBIMICk
+oMDguAa0I5sJFiEVbS+SC1FZAZKVfKwiFlMbJbKAtN1qYR6CVtpxdi2OxWZWzIK5
+UK3mK4olXiMpZRYN9Rri8x7y83jZJKpbVAklyGaXzSYsHqhIQZE1QdUKYSBInKJj
+MVRqkW0oT9YQFEOzuHq0MahElQQsYg0iAci9Ik5DhqIknADq7imDyLEcYDmeo9Xl
+MaIgAAQRy5MkDhgEOUYAlCjgEqZFsprMqjihGoVGLbJsNEGl2IawiuBD+kh/nZ9e
+typAr30wXXBQ2L+/7lRPmO7g0XCuscnuvGR9S3n6qRlXQFX+2NvmO3Cw2fbE8vav
+9vQuTX+AHTk56Hpli3vxdHvNs58oo97ra7K/Hx9/Zt9v+IP+s5PvW86X9s6FhCZu
+wb/cS5y6cXlwuK2Ib//urwe36jOzm+5ldd2fmFqIcnJHarsvJkQYw42B9SfWpd9I
+btvYuyHIsb5jp3epP8u7Ie2A8AI5MTfyddPuBM/tJePtys0nLgyHXok0htGbfgxP
+3VbzYUrEGXQm08NWJwxVPFY7evD5AdNHfdbltF+2Ntu3fsv79kubDlhz/gy/5nr0
+5tBAcUh0Z8q23F+v8sM5Mezs2ZmUttLfj/UsHrvbs+w5mtqfHFyWMbLZf3XLq6dn
+25VkV8Rs89rgJ/v83tmuTNRdWf9HW58+/2LS1KVr7362JqoUu3e49rnI3XW5lh2B
+H0d4WwJq7gSdH+pwxwsDtrv01eOhOcu2scL5b6JaT95izrnnwx3zP4Tc7xho3NkK
+G6oHjP7p3QXFcZi5zvtmVoivytodk14VbZnt/XR5qqH6kEMc6ZzP7HmJS2/1zYQV
+R+d+UdmWNrQqrXxywV3x4uThsfp9znK3M8rkft2z6+e59zq9joyuxcCCwtjq5nVB
+Fqfvpn7x8Yykl1PLS8F0dtd4y4U9GwPOuXoSo4FHeqNyfKa3f+3qUL4hxtefVG7Q
+2RdHpc8XEqOn/wY=
+=NMhl
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/smileykeith
+
+==================================================================
