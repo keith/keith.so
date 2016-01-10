@@ -10,9 +10,6 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.9.1",
-    "FitText.js": "git://github.com/davatron5000/FitText.js.git",
-    "normalize-css": "~2.1.2",
-    "modernizr": "~2.6.2"
+    "normalize-css": "~2.1.2"
   }
 }

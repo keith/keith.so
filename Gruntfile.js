@@ -9,28 +9,9 @@ module.exports = function(grunt) {
       }
     },
 
-    uglify: {
-      main: {
-        files: [
-          {
-            src: 'bower_components/FitText.js/jquery.fittext.js',
-            dest: 'build/js/fittext.min.js'
-          },
-          {
-            src: 'bower_components/modernizr/modernizr.js',
-            dest: 'build/js/modernizr.min.js'
-          }
-        ]
-      }
-    },
-
     copy: {
       main: {
         files: [
-          {
-            src: 'bower_components/jquery/jquery.min.js',
-            dest: 'build/js/jquery.min.js'
-          },
           {
             src: 'bower_components/normalize-css/normalize.css',
             dest: 'sass/_normalize.scss'
@@ -43,10 +24,6 @@ module.exports = function(grunt) {
             src: 'CNAME',
             dest: 'build/'
           },
-          // {
-          //   src: '*.php',
-          //   dest: 'build/'
-          // },
           {
             src: '*.asc',
             dest: 'build/'
@@ -58,10 +35,6 @@ module.exports = function(grunt) {
           {
             src: 'favicon.*',
             dest: 'build/'
-          },
-          {
-            src: 'a.htaccess',
-            dest: 'build/.htaccess'
           }
         ]
       }
@@ -107,12 +80,11 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-bower-task');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-shell');
 
-  grunt.registerTask('default', ['bower', 'copy', 'uglify', 'sass']);
+  grunt.registerTask('default', ['bower', 'copy', 'sass']);
   grunt.registerTask('deploy', ['default', 'shell']);
 };
