@@ -1,21 +1,8 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    bower: {
-      install: {
-        options: {
-          targetDir: 'bower_components',
-          copy: false
-        }
-      }
-    },
-
     copy: {
       main: {
         files: [
-          {
-            src: 'bower_components/normalize-css/normalize.css',
-            dest: 'sass/_normalize.scss'
-          },
           {
             src: '*.html',
             dest: 'build/'
@@ -79,12 +66,11 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-bower-task');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-shell');
 
-  grunt.registerTask('default', ['bower', 'copy', 'sass']);
+  grunt.registerTask('default', ['copy', 'sass']);
   grunt.registerTask('deploy', ['default', 'shell']);
 };

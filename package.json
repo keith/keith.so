@@ -7,14 +7,10 @@
     "type": "git",
     "url": "ssh://git@bitbucket.org/SmileyKeith/keith.so.git"
   },
-  "scripts": {
-    "preinstall": "npm install -g bower grunt-cli"
-  },
   "author": "Keith Smiley",
   "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-bower-task": "~0.3.1",
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-sass": "~0.4.1",
     "grunt-contrib-watch": "~0.5.1",
