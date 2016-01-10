@@ -24,8 +24,20 @@ body {
   color: #171515;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 50px;
+  font-size: 60px;
   width: 60%;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 35px;
+  }
 }
 
 #container {
