@@ -5,7 +5,7 @@
   src: local('Open Sans Light'), local('OpenSans-Light'), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTaRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
-$green: #2ECC71;
+$pink: #EA0B8C;
 $purple: #A086D3;
 $blue: #00ACEE;
 $red: #E74C3C;
@@ -79,7 +79,7 @@ sup {
 }
 
 #apps {
-  @include link($green);
+  @include link($pink);
 }
 
 #github {
