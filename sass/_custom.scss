@@ -90,6 +90,10 @@ sup {
   @include link($blue);
 }
 
+#mastodon {
+  @include link(#595AFF);
+}
+
 #blog {
   @include link($red);
 }
