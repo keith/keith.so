@@ -6,7 +6,7 @@ SRC=$(wildcard *.html CNAME pubkey.asc favicon.* keybase.txt)
 build: $(SRC) sass/*.scss
 	rm -rf $(BUILD_DIR)
 	mkdir -p $(BUILD_DIR)/css
-	sass --style compressed sass/main.scss:$(BUILD_DIR)/css/main.css
+	bundle exec sass --style compressed sass/main.scss:$(BUILD_DIR)/css/main.css
 	cp $(SRC) $(BUILD_DIR)/
 
 deploy: build
