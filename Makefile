@@ -15,4 +15,3 @@ deploy: build
 	rm -rf $(PAGES_DIR)/*
 	mv $(BUILD_DIR)/* $(PAGES_DIR)
 	git -C ./$(PAGES_DIR) commit -am "`date`"
-	git -C ./$(PAGES_DIR) push
